@@ -21,11 +21,4 @@ public class StringToNumberConverterTest {
         Assertions.assertThat(converter.convert(givenNumber))
                 .isEqualTo(-1234);
     }
-
-    class StringToNumberConverter {
-
-        public Integer convert(String stringNumber) {
-            return Integer.valueOf(stringNumber);
-        }
-    }
 }
