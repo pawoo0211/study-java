@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 import java.util.List;
 
 @DisplayName("약수의 합")
@@ -35,5 +36,20 @@ public class SumFactorsTest {
     void sum_input_5() {
         SumFactors sumFactors = new SumFactors(5);
         Assertions.assertThat(sumFactors.sum()).isEqualTo(6);
+    }
+
+    @Test
+    void sum_input_0() {
+        SumFactors sumFactors = new SumFactors(0);
+        Assertions.assertThat(sumFactors.sum()).isEqualTo(0);
+    }
+
+    @Test
+    void sum_input_random() {
+        SumFactors sumFactors = new SumFactors(368);
+        List<Integer> factors = sumFactors.findFactors();
+        for (Integer factor : factors) {
+            System.out.println("약수 : " + factor);
+        }
     }
 }

@@ -33,7 +33,9 @@ public class SumFactors {
 
     private List<Integer> initializeFactors() {
         List<Integer> factors = new ArrayList<>();
-        factors.add(1);
+        if (number > 1) {
+            factors.add(1);
+        }
         factors.add(number);
         return factors;
     }
