@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Objects;
+
 @DisplayName("푸드 파이트 대회 테스트")
 public class FoodFightTest {
     private FoodFight foodFight;
@@ -28,5 +30,12 @@ public class FoodFightTest {
         String result = "111303111";
 
         Assertions.assertThat(foodFight.sort(food)).isEqualTo(result);
+    }
+
+    @Test
+    void string_object() {
+        String test1 = "1234";
+        System.out.println("test1 : " + Objects.hashCode(test1));
+        System.out.println("test1 : " + Objects.hashCode(test1 + "5"));
     }
 }
