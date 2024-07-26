@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.math.BigInteger;
 
 @DisplayName("엄청난 부자2")
-public class Rich2 {
+public class Rich2Test {
     private RichTwo richTwo;
 
     @Test
