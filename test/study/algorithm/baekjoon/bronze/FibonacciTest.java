@@ -1,4 +1,4 @@
-package study.algorithm.baekjoon;
+package study.algorithm.baekjoon.bronze;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

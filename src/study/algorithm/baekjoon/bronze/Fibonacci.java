@@ -1,4 +1,4 @@
-package study.algorithm.baekjoon;
+package study.algorithm.baekjoon.bronze;
 
 public class Fibonacci {
     private static int fibCount = 0;

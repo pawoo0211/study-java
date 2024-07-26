@@ -1,4 +1,4 @@
-package study.algorithm.baekjoon;
+package study.algorithm.baekjoon.bronze;
 
 import java.util.Arrays;
 import java.util.Comparator;

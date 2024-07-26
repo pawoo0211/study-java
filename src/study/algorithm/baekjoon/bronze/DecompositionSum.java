@@ -1,4 +1,4 @@
-package study.algorithm.baekjoon;
+package study.algorithm.baekjoon.bronze;
 
 class DecompositionSum {
 
